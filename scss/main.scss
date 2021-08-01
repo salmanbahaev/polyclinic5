@@ -1,1 +1,131 @@
 @import "nullstyle.scss";
+@import "fonts.scss";
+$linkColor: #000;
+
+// ----------- header styles
+html, body {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+body.lock {
+  overflow: hidden;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  // height: 72px;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  z-index: 20;
+}
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+.header__menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all .3s ease 0s;
+  padding: 184px 10px 20px 10px;
+}
+.header__menu.active {
+  top: 0;
+}
+.header__list {
+  display: block;
+  align-items: center;
+  margin-bottom: 0;
+}
+.header__list li {
+  list-style: none;
+}
+.header__link {
+  color: #6C757D;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  &:hover {color:#6C757D;}
+}
+.header__logo {
+  position: relative;
+  z-index: 30;
+}
+.header__logo, .header__logo span {
+  text-decoration: none;
+  color: $linkColor;
+}
+.header__logo span {
+  margin-left: 8px;
+  // font-family: 'Montserrat Alternates';
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FD9F38;
+}
+.header__burger {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 20px;
+  z-index: 30;
+}
+.header__burger span {
+  position: absolute;
+  background-color: #FD9F38;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  top: 8px;
+  transition: all .3s ease 0s;
+}
+.header__burger:before,
+.header__burger:after {
+  content: '';
+  background-color: #FD9F38;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  left: 0;
+  transition: all .3s ease 0s;
+}
+.header__burger:before {
+  top: 0;
+}
+.header__burger:after {
+  bottom: 0;
+}
+.header__burger.active:before {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.header__burger.active:after {
+  transform: rotate(-45deg);
+  bottom: 8px;
+}
+.header__burger.active span {
+  transform: scale(0);
+}
+
+// --------------- slider styles
+.slider {
+  margin-top: 100px;
+}
