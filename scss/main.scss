@@ -5,9 +5,16 @@ $linkColor: #000;
 // ----------- header styles
 html, body {
   font-family: 'Montserrat Alternates', sans-serif;
+  height: auto;
 }
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1150px;
+  }
+}
+
 body.lock {
-  overflow: hidden;
+  // overflow: hidden;
 }
 .header {
   position: fixed;
@@ -24,7 +31,8 @@ body.lock {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ddd;
+  background: white;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
   z-index: 20;
 }
 .header__body {
@@ -81,10 +89,24 @@ body.lock {
 }
 .header__burger {
   display: block;
+  cursor: pointer;
   position: relative;
   width: 26px;
   height: 20px;
   z-index: 30;
+}
+.header__site-menu {
+  position: relative;
+  cursor: pointer;
+  margin-right: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FD9F38;
+  z-index: 30;
+  @media (max-width: 575.98px) {
+    display: none;
+  }
 }
 .header__burger span {
   position: absolute;
@@ -126,6 +148,247 @@ body.lock {
 }
 
 // --------------- slider styles
-.slider {
-  margin-top: 100px;
+.banner__slider {
+  position: relative;
+  margin-top: 104px;
+}
+.banner__item img {
+  width: 100%;
+}
+.banner__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  height: 64px;
+  width: 64px;
+  font-size: 0;
+  border-radius: 50%;
+  z-index: 100;
+  background: rgba(84, 89, 94, 0.5);
+  @media (max-width: 991.98px) {
+    display: none;
+  }
+}
+.banner__slider .slick-arrow.slick__banner-prev {
+  left: 0;
+  transform: translate(50%, -50%);
+}
+.banner__slider .slick-arrow.slick__banner-next {
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.slick__banner-prev img {
+  transform: rotate(-180deg);
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+}
+.banner__slider .slick-dots {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 22px;
+}
+.banner__slider .slick-dots li {
+  list-style: none;
+  margin: 0px 4px;
+}
+.banner__slider .slick-dots button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #54595E;
+  border-radius: 50%;
+}
+.banner__slider .slick-dots li.slick-active button {
+  box-shadow: 0px 0px 3px 2px rgba(255, 135, 0, 0.4);
+  background-color: #FD9F38;
+}
+
+// ---------------- reception style
+.reception {
+  margin-top: 40px;
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 2px solid #FD9F38;
+    margin-bottom: 32px;
+    background-image: url('../img/giraffe.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+    // height: 100%;
+
+    &:hover {
+      background-color: #FD9F38;
+      background-image: url('../img/giraffe-white.svg');
+      transition-duration: .5s;
+
+      * {
+        color: white;
+        transition-duration: .5s;
+      }
+    }
+
+    &__title {
+      margin-top: 31px;
+      margin-bottom: 8px;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 59px;
+      text-align: center;
+      color: #FD9F38;
+    }
+    
+    &__subtitle {
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0 19%;
+      text-align: center;
+      color: #FD9F38;
+    }
+  }
+
+  .schedule, .pediatrist, .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 26px 16px;
+    border-radius: 8px;
+    height: 100%;
+    transition: all .5s ease;
+
+    &:hover {
+      transition-duration: .5s;
+    }
+
+    &__details {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 4px;
+    }
+
+    &__subtitle {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 12px;
+    }
+
+    .details {
+      position: relative;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      margin-right: 8px;
+    }
+    img {
+      content: '';
+      width: 6px;
+      height: 11px;
+    }
+  }
+
+  .schedule {
+    border: 2px solid #3FBEAC;
+    color: #3FBEAC;
+    background: url('../img/whale.svg') 100% / contain no-repeat;
+
+    img {
+      background: url('../img/mini-arrow-green.svg') center no-repeat;
+    }
+
+    &:hover {
+      background-color: #3FBEAC;
+      background-image: url('../img/whale-white.svg');
+
+      * {
+        color: white;
+      }
+      
+      img {
+        background: url('../img/mini-arrow-white.svg') center no-repeat;
+      }
+    }
+  }
+  .pediatrist {
+    border: 2px solid #F9879F;
+    color: #F9879F;
+    background: url('../img/octopus.svg') 100% / contain no-repeat;
+
+    img {
+      background: url('../img/mini-arrow-pink.svg') center no-repeat;
+    }
+
+    &:hover {
+      background-color: #F9879F;
+      background-image: url('../img/octopus-white.svg');
+
+      * {
+        color: white;
+      }
+
+      img {
+        background: url('../img/mini-arrow-white.svg') center no-repeat;
+      }
+    }
+  }
+  .services {
+    border: 2px solid #1FB2E4;
+    color: #1FB2E4;
+    background: url('../img/dolphin.svg') 100% / contain no-repeat;
+
+    img {
+      background: url('../img/mini-arrow-blue.svg') center no-repeat;
+    }
+
+    &:hover {
+      background-color: #1FB2E4;
+      background-image: url('../img/dolphin-white.svg');
+
+      * {
+        color: white;
+      }
+
+      img {
+        background: url('../img/mini-arrow-white.svg') center no-repeat;
+      }
+    }
+  }
+}
+
+// ----------------- specialists style
+.specialists {
+  margin-top: 48px;
+  margin-bottom: 19px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #152536;
+  }
+
+  &__slider {
+    position: relative;
+
+    &__item img {
+      width: 100%;
+    }
+  }
 }
