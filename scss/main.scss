@@ -530,6 +530,7 @@ body.lock {
 
     &:hover {
       color: #BBA4E2;
+      box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
     }
   }
 }
@@ -580,6 +581,7 @@ body.lock {
     transform: translate(-50%, -50%);
   }
 
+  //------------ ministry styles
   .ministry {
     margin-top: 32px;
     margin-left: -15px;
@@ -602,4 +604,85 @@ body.lock {
   }
 }
 
-// ------------ ministry styles
+// ------------ footer
+.footer {
+  padding-top: 60px;
+  padding-bottom: 116px;
+  background: #E9ECEF;
+
+  &__gbu-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    color: #495057;
+    margin-bottom: 32px;
+  }
+
+  &__gbu-address, &__gbu-number, &__gbu-email {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #495057;
+    &:hover {color: #495057;}
+  }
+
+  &__gbu-address {
+    margin-bottom: 12px;
+    
+    
+  }
+
+  &__gbu-number {
+    margin-bottom: 12px;
+    
+  }
+
+  &__gbu-email {
+    
+  }
+
+  &__links {
+    margin-right: 40px;
+  }
+
+  &__headlink {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #495057;
+    margin-bottom: 16px;
+  }
+
+  &__headlink-services {
+    margin-top: 48px;
+  }
+
+  &__p-link {
+    margin-bottom: 12px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #495057;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+
+    &:hover {
+      color: #495057;
+      background-size: 100% 1px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -686,6 +687,8 @@ html, body {
 
 .headphys__button:hover {
   color: #BBA4E2;
+  -webkit-box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
 }
 
 .healthlinks {
@@ -760,4 +763,84 @@ html, body {
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
           box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 116px;
+  background: #E9ECEF;
+}
+
+.footer__gbu-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  color: #495057;
+  margin-bottom: 32px;
+}
+
+.footer__gbu-address, .footer__gbu-number, .footer__gbu-email {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #495057;
+}
+
+.footer__gbu-address:hover, .footer__gbu-number:hover, .footer__gbu-email:hover {
+  color: #495057;
+}
+
+.footer__gbu-address {
+  margin-bottom: 12px;
+}
+
+.footer__gbu-number {
+  margin-bottom: 12px;
+}
+
+.footer__links {
+  margin-right: 40px;
+}
+
+.footer__headlink {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #495057;
+  margin-bottom: 16px;
+}
+
+.footer__headlink-services {
+  margin-top: 48px;
+}
+
+.footer__p-link {
+  margin-bottom: 12px;
+}
+
+.footer__p-link:last-child {
+  margin-bottom: 0;
+}
+
+.footer__link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #495057;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.footer__link:hover {
+  color: #495057;
+  background-size: 100% 1px;
 }
