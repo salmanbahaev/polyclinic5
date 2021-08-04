@@ -11,16 +11,17 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnDotsHover: true,
-    // lazyLoad: 'ondemand',
+    
     prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
   });
 
 
   $('.specialists__slider').slick({
-    dots: true,
     speed: 500,
-    infinite: false,
+    infinite: true,
+    variableWidth: true,
+    swipeToSlide: true,
 
     prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
