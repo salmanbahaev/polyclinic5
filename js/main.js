@@ -30,8 +30,8 @@ $(document).ready(function() {
   $('.healthlinks__slider').slick({
     speed: 500,
     infinite: true,
-    slidesToShow: 4,
-    // variableWidth: true,
+    // slidesToShow: 4,
+    variableWidth: true,
     swipeToSlide: true,
 
     prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
