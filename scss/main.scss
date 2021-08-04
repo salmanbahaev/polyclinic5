@@ -152,6 +152,8 @@ body.lock {
 .banner__slider {
   position: relative;
   margin-top: 104px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .banner__item img {
   width: 100%;
@@ -216,9 +218,40 @@ body.lock {
 // ---------------- reception style
 .reception {
   margin-top: 40px;
+
+  .container {
+    @media (max-width: 991.98px) {
+      max-width: 704px;
+    }
+    
+    @media (max-width: 767.98px) {
+      max-width: 524px;
+    }
+
+    @media (max-width: 575.98px) {
+      width: calc(100% - 16px);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  &__card {
+    @media (max-width: 991.98px) {
+      margin-bottom: 16px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    @media (max-width: 575.98px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      min-height: 132px;
+    }
+  }
+
   .sign-up {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-radius: 8px;
     border: 2px solid #FD9F38;
     margin-bottom: 32px;
@@ -227,7 +260,18 @@ body.lock {
     background-size: contain;
     background-repeat: no-repeat;
     transition: all .5s ease;
-    // height: 100%;
+    height: 100%;
+
+    @media (max-width: 991.98px) {
+      padding: 26px 16px;
+      margin-bottom: 0;
+      background-color: #FD9F38;
+      background-image: url('../img/giraffe-white.svg');
+    }
+    
+    @media (max-width: 575.98px) {
+      padding: 16px 24px;
+    }
 
     &:hover {
       background-color: #FD9F38;
@@ -248,6 +292,14 @@ body.lock {
       line-height: 59px;
       text-align: center;
       color: #FD9F38;
+
+      @media (max-width: 991.98px) {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0;
+        color: white;
+      }
     }
     
     &__subtitle {
@@ -258,6 +310,15 @@ body.lock {
       padding: 0 19%;
       text-align: center;
       color: #FD9F38;
+
+      @media (max-width: 991.98px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 0;
+        padding: 0;
+        color: white;
+      } 
     }
   }
 
@@ -274,8 +335,22 @@ body.lock {
       transition-duration: .5s;
     }
 
+    @media (max-width: 991.98px) {
+      text-align: center;
+    }
+
+    @media (max-width: 575.98px) {
+      padding: 16px 24px;
+    }
+
     &__details {
+      display: flex;
+      align-items: center;
       margin-bottom: 0;
+
+      @media (max-width: 1199.98px) {
+        display: none;
+      }
     }
 
     &__title {
@@ -290,6 +365,10 @@ body.lock {
       font-size: 12px;
       line-height: 15px;
       margin-bottom: 12px;
+
+      @media (max-width: 1199.98px) {
+        margin-bottom: 0;
+      }
     }
 
     .details {
@@ -315,6 +394,15 @@ body.lock {
       background: url('../img/mini-arrow-green.svg') center no-repeat;
     }
 
+    @media (max-width: 991.98px) {
+      background-color: #3FBEAC;
+      background-image: url('../img/whale-white.svg');
+
+      * {
+        color: white;
+      }
+    }
+
     &:hover {
       background-color: #3FBEAC;
       background-image: url('../img/whale-white.svg');
@@ -337,6 +425,15 @@ body.lock {
       background: url('../img/mini-arrow-pink.svg') center no-repeat;
     }
 
+    @media (max-width: 991.98px) {
+      background-color: #F9879F;
+      background-image: url('../img/whale-white.svg');
+
+      * {
+        color: white;
+      }
+    }
+
     &:hover {
       background-color: #F9879F;
       background-image: url('../img/octopus-white.svg');
@@ -357,6 +454,15 @@ body.lock {
 
     img {
       background: url('../img/mini-arrow-blue.svg') center no-repeat;
+    }
+
+    @media (max-width: 991.98px) {
+      background-color: #1FB2E4;
+      background-image: url('../img/whale-white.svg');
+
+      * {
+        color: white;
+      }
     }
 
     &:hover {
@@ -527,10 +633,12 @@ body.lock {
     border-radius: 8px;
     background: white;
     text-align: center;
+    transition: all .3s ease;
 
     &:hover {
       color: #BBA4E2;
       box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
+      transition-duration: .3s;
     }
   }
 }
@@ -548,6 +656,7 @@ body.lock {
   &__slider {
     position: relative;
     overflow: hidden;
+    border-radius: 8px;
   }
 
   &__item {
@@ -555,6 +664,7 @@ body.lock {
     img {
       border-radius: 8px;
       max-width: 100%;
+      overflow: hidden;
       box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
     }
   }

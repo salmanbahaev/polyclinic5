@@ -258,6 +258,8 @@ html, body {
 .banner__slider {
   position: relative;
   margin-top: 104px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .banner__item img {
@@ -349,6 +351,42 @@ html, body {
   margin-top: 40px;
 }
 
+@media (max-width: 991.98px) {
+  .reception .container {
+    max-width: 704px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .reception .container {
+    max-width: 524px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reception .container {
+    width: calc(100% - 16px);
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .reception__card {
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reception__card {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 132px;
+  }
+}
+
 .reception .sign-up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +395,9 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 8px;
   border: 2px solid #FD9F38;
   margin-bottom: 32px;
@@ -366,6 +407,22 @@ html, body {
   background-repeat: no-repeat;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  height: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .reception .sign-up {
+    padding: 26px 16px;
+    margin-bottom: 0;
+    background-color: #FD9F38;
+    background-image: url("../img/giraffe-white.svg");
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reception .sign-up {
+    padding: 16px 24px;
+  }
 }
 
 .reception .sign-up:hover {
@@ -391,6 +448,16 @@ html, body {
   color: #FD9F38;
 }
 
+@media (max-width: 991.98px) {
+  .reception .sign-up__title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+    color: white;
+  }
+}
+
 .reception .sign-up__subtitle {
   margin-bottom: 30px;
   font-weight: 500;
@@ -399,6 +466,17 @@ html, body {
   padding: 0 19%;
   text-align: center;
   color: #FD9F38;
+}
+
+@media (max-width: 991.98px) {
+  .reception .sign-up__subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    color: white;
+  }
 }
 
 .reception .schedule, .reception .pediatrist, .reception .services {
@@ -424,8 +502,32 @@ html, body {
           transition-duration: .5s;
 }
 
+@media (max-width: 991.98px) {
+  .reception .schedule, .reception .pediatrist, .reception .services {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reception .schedule, .reception .pediatrist, .reception .services {
+    padding: 16px 24px;
+  }
+}
+
 .reception .schedule__details, .reception .pediatrist__details, .reception .services__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .reception .schedule__details, .reception .pediatrist__details, .reception .services__details {
+    display: none;
+  }
 }
 
 .reception .schedule__title, .reception .pediatrist__title, .reception .services__title {
@@ -440,6 +542,12 @@ html, body {
   font-size: 12px;
   line-height: 15px;
   margin-bottom: 12px;
+}
+
+@media (max-width: 1199.98px) {
+  .reception .schedule__subtitle, .reception .pediatrist__subtitle, .reception .services__subtitle {
+    margin-bottom: 0;
+  }
 }
 
 .reception .schedule .details, .reception .pediatrist .details, .reception .services .details {
@@ -466,6 +574,16 @@ html, body {
   background: url("../img/mini-arrow-green.svg") center no-repeat;
 }
 
+@media (max-width: 991.98px) {
+  .reception .schedule {
+    background-color: #3FBEAC;
+    background-image: url("../img/whale-white.svg");
+  }
+  .reception .schedule * {
+    color: white;
+  }
+}
+
 .reception .schedule:hover {
   background-color: #3FBEAC;
   background-image: url("../img/whale-white.svg");
@@ -489,6 +607,16 @@ html, body {
   background: url("../img/mini-arrow-pink.svg") center no-repeat;
 }
 
+@media (max-width: 991.98px) {
+  .reception .pediatrist {
+    background-color: #F9879F;
+    background-image: url("../img/whale-white.svg");
+  }
+  .reception .pediatrist * {
+    color: white;
+  }
+}
+
 .reception .pediatrist:hover {
   background-color: #F9879F;
   background-image: url("../img/octopus-white.svg");
@@ -510,6 +638,16 @@ html, body {
 
 .reception .services img {
   background: url("../img/mini-arrow-blue.svg") center no-repeat;
+}
+
+@media (max-width: 991.98px) {
+  .reception .services {
+    background-color: #1FB2E4;
+    background-image: url("../img/whale-white.svg");
+  }
+  .reception .services * {
+    color: white;
+  }
 }
 
 .reception .services:hover {
@@ -683,12 +821,16 @@ html, body {
   border-radius: 8px;
   background: white;
   text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .headphys__button:hover {
   color: #BBA4E2;
   -webkit-box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
           box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 .healthlinks {
@@ -704,11 +846,13 @@ html, body {
 .healthlinks__slider {
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .healthlinks__item img {
   border-radius: 8px;
   max-width: 100%;
+  overflow: hidden;
   -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
           box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
 }
