@@ -261,6 +261,7 @@ html, body {
 
 .banner__item img {
   width: 100%;
+  border-radius: 8px;
 }
 
 .banner__slider .slick-arrow {
@@ -672,7 +673,7 @@ html, body {
 }
 
 .headphys__button {
-  margin-top: 50px;
+  margin-top: 32px;
   padding: 14px 36px;
   color: #BBA4E2;
   font-weight: bold;
@@ -685,4 +686,57 @@ html, body {
 
 .headphys__button:hover {
   color: #BBA4E2;
+}
+
+.healthlinks {
+  padding-top: 46px;
+  background: #E9ECEF;
+}
+
+.healthlinks .slick-slide {
+  margin: 0 16px;
+}
+
+.healthlinks .slick-list {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.healthlinks__slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.healthlinks__item img {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.healthlinks__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  height: 64px;
+  width: 64px;
+  font-size: 0;
+  border-radius: 50%;
+  z-index: 100;
+  background: rgba(84, 89, 94, 0.5);
+}
+
+@media (max-width: 991.98px) {
+  .healthlinks__slider .slick-arrow {
+    display: none;
+  }
+}
+
+.healthlinks__slider .slick-arrow.slick__banner-prev {
+  left: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.healthlinks__slider .slick-arrow.slick__banner-next {
+  right: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }

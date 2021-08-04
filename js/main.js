@@ -11,7 +11,7 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnDotsHover: true,
-    
+
     prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
   });
@@ -26,4 +26,17 @@ $(document).ready(function() {
     prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
   })
+
+  $('.healthlinks__slider').slick({
+    speed: 500,
+    infinite: true,
+    slidesToShow: 4,
+    // variableWidth: true,
+    swipeToSlide: true,
+
+    prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
+  })
+
+  
 })
