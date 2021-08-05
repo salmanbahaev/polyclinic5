@@ -7,6 +7,9 @@ html, body {
   font-family: 'Montserrat Alternates', sans-serif;
   height: auto;
 }
+.wrapper {
+  margin-top: 104px;
+}
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1150px;
@@ -149,9 +152,14 @@ body.lock {
 }
 
 // --------------- slider styles
+.banner {
+  @media (max-width: 575.98px) {
+    display: none;
+  }
+}
 .banner__slider {
   position: relative;
-  margin-top: 104px;
+  // margin-top: 104px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -235,6 +243,11 @@ body.lock {
     }
   }
 
+  &__card-first {
+    margin-bottom: 32px;
+
+  }
+
   &__card {
     @media (max-width: 991.98px) {
       margin-bottom: 16px;
@@ -254,7 +267,6 @@ body.lock {
     justify-content: center;
     border-radius: 8px;
     border: 2px solid #FD9F38;
-    margin-bottom: 32px;
     background-image: url('../img/giraffe.svg');
     background-position: center;
     background-size: contain;

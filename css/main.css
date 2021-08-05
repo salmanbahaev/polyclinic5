@@ -80,6 +80,10 @@ html, body {
   height: auto;
 }
 
+.wrapper {
+  margin-top: 104px;
+}
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1150px;
@@ -255,9 +259,14 @@ html, body {
           transform: scale(0);
 }
 
+@media (max-width: 575.98px) {
+  .banner {
+    display: none;
+  }
+}
+
 .banner__slider {
   position: relative;
-  margin-top: 104px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -371,6 +380,10 @@ html, body {
   }
 }
 
+.reception__card-first {
+  margin-bottom: 32px;
+}
+
 @media (max-width: 991.98px) {
   .reception__card {
     margin-bottom: 16px;
@@ -400,7 +413,6 @@ html, body {
           justify-content: center;
   border-radius: 8px;
   border: 2px solid #FD9F38;
-  margin-bottom: 32px;
   background-image: url("../img/giraffe.svg");
   background-position: center;
   background-size: contain;
