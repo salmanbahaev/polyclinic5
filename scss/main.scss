@@ -1051,8 +1051,6 @@ body.lock {
 
   &__gbu-address {
     margin-bottom: 12px;
-    
-    
   }
 
   &__gbu-number {
@@ -1060,8 +1058,13 @@ body.lock {
     
   }
 
-  &__gbu-email {
-    
+  &__media {
+    display: flex;
+    margin-top: 32px;
+
+    a:not(:last-child) {
+      margin-right: 16px;
+    }
   }
 
   &__links {

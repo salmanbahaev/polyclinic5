@@ -1315,6 +1315,17 @@ html, body {
   margin-bottom: 12px;
 }
 
+.footer__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.footer__media a:not(:last-child) {
+  margin-right: 16px;
+}
+
 .footer__links {
   margin-right: 40px;
 }
