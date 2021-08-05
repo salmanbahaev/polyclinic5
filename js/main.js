@@ -32,7 +32,6 @@ $(document).ready(function() {
       breakpoint: 992,
       settings: {
         arrows : false,
-        centerMode: true
       }
     }],
 
@@ -48,8 +47,7 @@ $(document).ready(function() {
     responsive: [{
       breakpoint: 992,
       settings: {
-        arrows : false,
-        centerMode: true
+        arrows : false
       }
     }],
 

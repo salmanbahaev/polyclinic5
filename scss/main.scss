@@ -117,7 +117,7 @@ body.lock {
 .header__site-menu {
   position: relative;
   cursor: pointer;
-  margin-right: 14px;
+  padding-right: 14px;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -660,16 +660,12 @@ body.lock {
         right: 0px;
       }
     }
-
-    @media (max-width: 575.98px) {
-      margin: 0 -15px;
-    }
   }
 
   &__item {
     margin: 0 12px;
-    height: 256px;
-    width: 192px;
+    height: 320px;
+    width: 240px;
 
     img {
       border-radius: 8px;
@@ -918,10 +914,6 @@ body.lock {
         right: 0px;
       }
     }
-
-    @media (max-width: 575.98px) {
-      margin: 0 -15px;
-    }
   }
 
   &__item {
@@ -949,6 +941,9 @@ body.lock {
     margin-right: -15px;
   
     &__link {
+      position: relative;
+      width: 160px;
+      height: 160px;
       padding-left: 16px;
       padding-right: 16px;
       width: auto;
@@ -959,6 +954,17 @@ body.lock {
         object-fit: cover;
         border-radius: 8px;
         box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
+
+        :hover {
+          position: absolute;
+          top: -16px;
+        }
+      }
+
+      &:hover {
+        .ministry__link-hover {
+          top: -16px;
+        }
       }
 
       @media (max-width: 1199.98px) {
@@ -980,6 +986,11 @@ body.lock {
         padding-right: 4px;
         margin-bottom: 8px;
       }
+    }
+
+    &__link-hover {
+      position: absolute;
+      top: 0;
     }
 
     @media (max-width: 991.98px) {

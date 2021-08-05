@@ -215,7 +215,7 @@ html, body {
 .header__site-menu {
   position: relative;
   cursor: pointer;
-  margin-right: 14px;
+  padding-right: 14px;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -869,16 +869,10 @@ html, body {
   right: 0px;
 }
 
-@media (max-width: 575.98px) {
-  .specialists__slider {
-    margin: 0 -15px;
-  }
-}
-
 .specialists__item {
   margin: 0 12px;
-  height: 256px;
-  width: 192px;
+  height: 320px;
+  width: 240px;
 }
 
 .specialists__item img {
@@ -1157,12 +1151,6 @@ html, body {
   right: 0px;
 }
 
-@media (max-width: 575.98px) {
-  .healthlinks__slider {
-    margin: 0 -15px;
-  }
-}
-
 .healthlinks__item img {
   border-radius: 8px;
   max-width: 100%;
@@ -1188,6 +1176,9 @@ html, body {
 }
 
 .healthlinks .ministry__link {
+  position: relative;
+  width: 160px;
+  height: 160px;
   padding-left: 16px;
   padding-right: 16px;
   width: auto;
@@ -1201,6 +1192,15 @@ html, body {
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
           box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
+}
+
+.healthlinks .ministry__link img :hover {
+  position: absolute;
+  top: -16px;
+}
+
+.healthlinks .ministry__link:hover .ministry__link-hover {
+  top: -16px;
 }
 
 @media (max-width: 1199.98px) {
@@ -1229,6 +1229,11 @@ html, body {
     padding-right: 4px;
     margin-bottom: 8px;
   }
+}
+
+.healthlinks .ministry__link-hover {
+  position: absolute;
+  top: 0;
 }
 
 @media (max-width: 991.98px) {
