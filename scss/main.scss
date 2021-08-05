@@ -250,6 +250,7 @@ body.lock {
 .slick-track {
   display: flex;
 }
+
 .banner__slider .slick-dots {
   position: absolute;
   display: flex;
@@ -262,7 +263,7 @@ body.lock {
 }
 .banner__slider .slick-dots li {
   list-style: none;
-  margin: 0px 4px;
+  margin: 0px 5px;
 }
 .banner__slider .slick-dots button {
   font-size: 0;
@@ -272,8 +273,19 @@ body.lock {
   border-radius: 50%;
 }
 .banner__slider .slick-dots li.slick-active button {
-  box-shadow: 0px 0px 3px 2px rgba(255, 135, 0, 0.4);
+  position: relative;
+  // box-shadow: 0px 0px 3px 2px rgba(255, 135, 0, 0.4);
   background-color: #FD9F38;
+}
+.banner__slider .slick-dots li.slick-active button::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px dashed #FD9F38;
 }
 
 // ---------------- reception style
@@ -664,8 +676,8 @@ body.lock {
 
   &__item {
     margin: 0 12px;
-    height: 320px;
-    width: 240px;
+    height: 300px;
+    width: 225px;
 
     img {
       border-radius: 8px;
