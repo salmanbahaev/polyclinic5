@@ -783,8 +783,8 @@ html, body {
   .specialists__title {
     pointer-events: auto;
     color: #3d4044;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
-    background-image: linear-gradient(currentColor, currentColor);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3d4044), to(#3d4044));
+    background-image: linear-gradient(#3d4044, #3d4044);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
@@ -802,8 +802,8 @@ html, body {
   font-size: 16px;
   line-height: 20px;
   color: #3FBEAC;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
-  background-image: linear-gradient(currentColor, currentColor);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3FBEAC), to(#3FBEAC));
+  background-image: linear-gradient(#3FBEAC, #3FBEAC);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 1px;
@@ -887,6 +887,34 @@ html, body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.specialists__info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 94px;
+  padding: 10px;
+  background: rgba(21, 37, 54, 0.5);
+  border-radius: 8px;
+  z-index: 40;
+}
+
+.specialists__name {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.specialists__post {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: white;
 }
 
 .about__header {
@@ -1059,6 +1087,14 @@ html, body {
   }
 }
 
+@media (max-width: 364px) {
+  .headphys__button {
+    width: 200px;
+    padding: 12px 36px;
+    border-radius: 30px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .headphys {
     padding: 32px 0;
@@ -1154,7 +1190,6 @@ html, body {
 .healthlinks .ministry__link {
   padding-left: 16px;
   padding-right: 16px;
-  height: 160px;
   width: auto;
 }
 
@@ -1166,6 +1201,48 @@ html, body {
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
           box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
+}
+
+@media (max-width: 1199.98px) {
+  .healthlinks .ministry__link {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .healthlinks .ministry__link {
+    margin-bottom: 16px;
+    height: 168px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .healthlinks .ministry__link {
+    height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .healthlinks .ministry__link {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .healthlinks .ministry {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .healthlinks .ministry {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
 }
 
 .footer {
@@ -1205,6 +1282,12 @@ html, body {
   line-height: 20px;
   color: #495057;
   margin-bottom: 32px;
+}
+
+@media (max-width: 350px) {
+  .footer__gbu-title {
+    font-size: 15px;
+  }
 }
 
 .footer__gbu-address, .footer__gbu-number, .footer__gbu-email {
@@ -1258,8 +1341,8 @@ html, body {
   font-size: 12px;
   line-height: 15px;
   color: #495057;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
-  background-image: linear-gradient(currentColor, currentColor);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#495057), to(#495057));
+  background-image: linear-gradient(#495057, #495057);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 1px;

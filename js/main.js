@@ -31,10 +31,6 @@ $(document).ready(function() {
     responsive: [{
       breakpoint: 992,
       settings: {
-        arrows : false
-      },
-      breakpoint: 576,
-      settings: {
         arrows : false,
         centerMode: true
       }
