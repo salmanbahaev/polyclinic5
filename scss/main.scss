@@ -759,7 +759,7 @@ body.lock {
     color: #152536;
 
     @media (max-width: 575.98px) {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 15px;
     }
   }
@@ -814,8 +814,8 @@ body.lock {
 
   &__subtitle {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 16.8px;
     margin-bottom: 0;
     color: #FFFFFF;
 
@@ -947,6 +947,7 @@ body.lock {
       padding-left: 16px;
       padding-right: 16px;
       width: auto;
+      transition: transform .3s;
       
       img {
         width: 100%;
@@ -954,16 +955,16 @@ body.lock {
         object-fit: cover;
         border-radius: 8px;
         box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.15);
-
-        :hover {
-          position: absolute;
-          top: -16px;
-        }
+        transition: transform .3s;
       }
 
-      &:hover {
-        .ministry__link-hover {
-          top: -16px;
+      @media (min-width: 992px) {
+        &:hover {
+          transform: scale(1.05);
+          
+          img {
+            box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+          }
         }
       }
 
