@@ -11,6 +11,12 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnDotsHover: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        arrows : false
+      }
+    }],
 
     prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
@@ -22,6 +28,17 @@ $(document).ready(function() {
     infinite: true,
     variableWidth: true,
     swipeToSlide: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        arrows : false
+      },
+      breakpoint: 576,
+      settings: {
+        arrows : false,
+        centerMode: true
+      }
+    }],
 
     prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
@@ -30,9 +47,15 @@ $(document).ready(function() {
   $('.healthlinks__slider').slick({
     speed: 500,
     infinite: true,
-    // slidesToShow: 4,
     variableWidth: true,
     swipeToSlide: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        arrows : false,
+        centerMode: true
+      }
+    }],
 
     prevArrow: '<button type="button" class="slick__banner-prev"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
