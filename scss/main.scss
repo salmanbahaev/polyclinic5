@@ -22,18 +22,20 @@ body::-webkit-scrollbar-track{
 }
 
 
-.header__menu::-webkit-scrollbar {
-  width: 8px;
-	background-color: #FD9F38;
-}
-.header__menu::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background: linear-gradient(left, #FD9F38, #FD9F38);
-}
-.header__menu::-webkit-scrollbar-track{
-  border-radius: 10px;
-  background: #eee;
-  box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3)
+@media (min-width: 575.98px) {
+  .header__menu::-webkit-scrollbar {
+    width: 8px;
+    background-color: #FD9F38;
+  }
+  .header__menu::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: linear-gradient(left, #FD9F38, #FD9F38);
+  }
+  .header__menu::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #eee;
+    box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3)
+  }
 }
 
 body.lock {
