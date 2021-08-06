@@ -80,22 +80,22 @@ html, body {
   height: auto;
 }
 
-body::-webkit-scrollbar {
-  width: 8px;
-  background-color: #FD9F38;
-}
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background: -webkit-gradient(linear, left top, right top, from(#FD9F38), to(#FD9F38));
-  background: linear-gradient(left, #FD9F38, #FD9F38);
-}
-
-body::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: #eee;
-  -webkit-box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0, 0, 0, 0.3);
+@media (min-width: 575.98px) {
+  body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #FD9F38;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: -webkit-gradient(linear, left top, right top, from(#FD9F38), to(#FD9F38));
+    background: linear-gradient(left, #FD9F38, #FD9F38);
+  }
+  body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #eee;
+    -webkit-box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: 575.98px) {
@@ -706,6 +706,7 @@ body.lock {
     margin-bottom: 0;
     background-color: #FD9F38;
     background-image: url("../img/giraffe-white.svg");
+    background-position: right;
   }
 }
 
@@ -906,7 +907,7 @@ body.lock {
 @media (max-width: 991.98px) {
   .reception .pediatrist {
     background-color: #F9879F;
-    background-image: url("../img/whale-white.svg");
+    background-image: url("../img/octopus-white.svg");
   }
   .reception .pediatrist * {
     color: white;
@@ -939,7 +940,7 @@ body.lock {
 @media (max-width: 991.98px) {
   .reception .services {
     background-color: #1FB2E4;
-    background-image: url("../img/whale-white.svg");
+    background-image: url("../img/dolphin-white.svg");
   }
   .reception .services * {
     color: white;

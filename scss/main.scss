@@ -7,19 +7,24 @@ html, body {
   font-family: 'Montserrat Alternates', sans-serif;
   height: auto;
 }
-body::-webkit-scrollbar {
-  width: 8px;
-	background-color: #FD9F38;
+
+@media (min-width: 575.98px) {
+  body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #FD9F38;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: linear-gradient(left, #FD9F38, #FD9F38);
+  }
+  body::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #eee;
+    box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3)
+  }
 }
-body::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background: linear-gradient(left, #FD9F38, #FD9F38);
-}
-body::-webkit-scrollbar-track{
-  border-radius: 10px;
-  background: #eee;
-  box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3)
-}
+
+
 
 
 @media (min-width: 575.98px) {
@@ -494,6 +499,7 @@ body.lock {
       margin-bottom: 0;
       background-color: #FD9F38;
       background-image: url('../img/giraffe-white.svg');
+      background-position: right;
     }
     
     @media (max-width: 575.98px) {
@@ -658,7 +664,7 @@ body.lock {
 
     @media (max-width: 991.98px) {
       background-color: #F9879F;
-      background-image: url('../img/whale-white.svg');
+      background-image: url('../img/octopus-white.svg');
 
       * {
         color: white;
@@ -689,7 +695,7 @@ body.lock {
 
     @media (max-width: 991.98px) {
       background-color: #1FB2E4;
-      background-image: url('../img/whale-white.svg');
+      background-image: url('../img/dolphin-white.svg');
 
       * {
         color: white;
