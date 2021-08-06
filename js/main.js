@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.header__burger, .header__site-menu').click(function() {
     $('.header__burger,.header__menu').toggleClass('active')
     $('body').toggleClass('lock')
-    $('.header').toggleClass('header__center')
+    // $('.header').toggleClass('header__center')
   })
 
   // слайдер для баннера
