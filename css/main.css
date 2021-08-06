@@ -90,6 +90,19 @@ html, body {
   }
 }
 
+body.lock {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
+.header__center {
+  padding-right: 17px;
+}
+
+.header__center-2 {
+  padding-left: 0px;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -158,6 +171,11 @@ html, body {
 
 .header__menu.active {
   top: 0;
+}
+
+.header__menu.active .container {
+  padding-right: 24px;
+  padding-left: 6px;
 }
 
 .header__green-blue {
@@ -321,6 +339,10 @@ html, body {
 
 .header__link:hover {
   color: #152536;
+}
+
+.act {
+  font-weight: 900;
 }
 
 .header__logo {
@@ -1071,8 +1093,11 @@ html, body {
   color: white;
 }
 
+.about {
+  padding-top: 48px;
+}
+
 .about__header {
-  margin-top: 48px;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
