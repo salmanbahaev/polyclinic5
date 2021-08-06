@@ -124,6 +124,12 @@ body.lock {
   margin-top: 104px;
 }
 
+@media (max-width: 575.98px) {
+  .wrapper {
+    margin-top: 76px;
+  }
+}
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1150px;

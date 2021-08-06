@@ -44,6 +44,10 @@ body.lock {
 
 .wrapper {
   margin-top: 104px;
+
+  @media (max-width: 575.98px) {
+    margin-top: 76px;
+  }
 }
 
 @media (min-width: 1200px) {
