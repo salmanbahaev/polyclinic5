@@ -303,15 +303,24 @@ html, body {
   margin-bottom: 16px;
 }
 
+.header__list li:hover .header__link {
+  color: #152536;
+}
+
 .header__link {
+  display: inline-block;
+  width: 100%;
   color: #6C757D;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  color: #6C757D;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .header__link:hover {
-  color: #6C757D;
+  color: #152536;
 }
 
 .header__logo {
@@ -557,18 +566,10 @@ html, body {
 
 .banner__slider .slick-dots li.slick-active button {
   position: relative;
+  width: 10px;
+  height: 10px;
+  margin-bottom: -1px;
   background-color: #FD9F38;
-}
-
-.banner__slider .slick-dots li.slick-active button::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 1px dashed #FD9F38;
 }
 
 .reception {
