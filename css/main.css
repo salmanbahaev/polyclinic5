@@ -1133,12 +1133,6 @@ body.lock {
   color: #152536;
 }
 
-@media (max-width: 991.98px) {
-  .about__header {
-    margin-top: 32px;
-  }
-}
-
 .about__content {
   margin-top: 19px;
 }
@@ -1195,6 +1189,12 @@ body.lock {
 
 .about__subtitle {
   font-weight: normal;
+}
+
+@media (max-width: 991.98px) {
+  .about {
+    padding-top: 32px;
+  }
 }
 
 .headphys {
