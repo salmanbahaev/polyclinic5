@@ -1638,8 +1638,10 @@ body.lock {
       }
     }
 
-    &-submit {
-      padding: 8px 24.5px;
+    &-submit, .orange-button {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
       font-weight: bold;
       font-size: 16px;
       line-height: 20px;

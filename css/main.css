@@ -2041,8 +2041,10 @@ body.lock {
   }
 }
 
-.page-headphys__form-submit {
-  padding: 8px 24.5px;
+.page-headphys__form-submit, .page-headphys__form .orange-button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 160px;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
