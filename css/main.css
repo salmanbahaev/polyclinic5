@@ -1768,7 +1768,7 @@ body.lock {
 }
 
 .page-headphys {
-  padding-bottom: 128px;
+  padding-bottom: 64px;
 }
 
 .page-headphys .container {
@@ -1783,10 +1783,22 @@ body.lock {
 
 .page-headphys__photo img {
   border-radius: 8px;
+  max-width: 300px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 575.98px) {
+  .page-headphys__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .page-headphys__info {
@@ -1799,11 +1811,25 @@ body.lock {
   }
 }
 
+@media (max-width: 767.98px) {
+  .page-headphys__info {
+    padding-left: 15px;
+  }
+}
+
 .page-headphys__name {
   font-weight: bold;
   font-size: 32px;
   line-height: 39px;
   color: #152536;
+}
+
+@media (max-width: 575.98px) {
+  .page-headphys__name {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .page-headphys__doctor {
@@ -1858,7 +1884,7 @@ body.lock {
 }
 
 .page-headphys__schedule {
-  margin-top: 33px;
+  margin-top: 64px;
   margin-bottom: 27px;
   font-weight: bold;
   font-size: 24px;
@@ -1888,7 +1914,18 @@ body.lock {
 @media (max-width: 575.98px) {
   .page-headphys__days-day {
     width: 50%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: start;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    padding-left: 5px;
   }
 }
 
@@ -1911,6 +1948,17 @@ body.lock {
   .page-headphys__days-time {
     width: 50%;
     text-align: start;
+    border-right: none;
+    border-bottom: 1px solid #CED4DA;
+    margin-bottom: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 20px;
   }
 }
 
@@ -1933,4 +1981,84 @@ body.lock {
 .page-headphys__days:last-child .page-headphys__days-day,
 .page-headphys__days:last-child .page-headphys__days-time {
   border-right: none;
+}
+
+@media (max-width: 575.98px) {
+  .page-headphys__days:last-child .page-headphys__days-day,
+  .page-headphys__days:last-child .page-headphys__days-time {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-headphys__days:last-child .page-headphys__days-day {
+    border-right: 1px solid #CED4DA;
+  }
+}
+
+.page-headphys__apply-title {
+  margin-top: 64px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 0;
+  color: #152536;
+}
+
+.page-headphys__form {
+  margin-top: 27px;
+}
+
+.page-headphys__form-name, .page-headphys__form-email, .page-headphys__form-text {
+  border-radius: 8px;
+  border: 1px solid #152536;
+}
+
+.page-headphys__form-name {
+  height: 36px;
+}
+
+.page-headphys__form-email {
+  margin-top: 24px;
+  height: 36px;
+}
+
+.page-headphys__form-text {
+  margin-top: 24px;
+  min-height: 160px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 575.98px) {
+  .page-headphys__form-text {
+    min-height: 180px;
+  }
+}
+
+.page-headphys__form-submit {
+  padding: 8px 24.5px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  background: #FD9F38;
+  border-radius: 8px;
+}
+
+.page-headphys__consent {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-bottom: 48px;
+}
+
+.page-headphys__consent a {
+  color: #152536;
+  text-decoration: underline;
+}
+
+.page-headphys__consent a:hover {
+  color: #152536;
 }

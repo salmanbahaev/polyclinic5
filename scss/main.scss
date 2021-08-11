@@ -1415,7 +1415,7 @@ body.lock {
 }
 
 .page-headphys {
-  padding-bottom: 128px;
+  padding-bottom: 64px;
 
   .container {
     display: flex;
@@ -1426,9 +1426,15 @@ body.lock {
 
     img {
       border-radius: 8px;
+      max-width: 300px;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    @media (max-width: 575.98px) {
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -1438,6 +1444,10 @@ body.lock {
     @media (max-width: 991.98px) {
       padding-left: 20px;
     }
+
+    @media (max-width: 767.98px) {
+      padding-left: 15px;
+    }
   }
 
   &__name {
@@ -1445,6 +1455,12 @@ body.lock {
     font-size: 32px;
     line-height: 39px;
     color: #152536;
+
+    @media (max-width: 575.98px) {
+      margin-top: 24px;
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 
   &__doctor {
@@ -1488,7 +1504,7 @@ body.lock {
   }
 
   &__schedule {
-    margin-top: 33px;
+    margin-top: 64px;
     margin-bottom: 27px;
     font-weight: bold;
     font-size: 24px;
@@ -1499,6 +1515,7 @@ body.lock {
 
     @media (max-width: 575.98px) {
       display: flex;
+
     }
 
     &-day {
@@ -1514,7 +1531,14 @@ body.lock {
 
       @media (max-width: 575.98px) {
         width: 50%;
+        height: 40px;
+        display: flex;
+        align-items: center;
         text-align: start;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0;
+        padding-left: 5px;
       }
     }
 
@@ -1533,6 +1557,13 @@ body.lock {
       @media (max-width: 575.98px) {
         width: 50%;
         text-align: start;
+        border-right: none;
+        border-bottom: 1px solid #CED4DA;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
       }
     }
 
@@ -1554,5 +1585,81 @@ body.lock {
   &__days:last-child .page-headphys__days-day,
   &__days:last-child .page-headphys__days-time {
     border-right: none;
+
+    @media (max-width: 575.98px) {
+      border-bottom: none;
+    }
+  }
+
+  &__days:last-child .page-headphys__days-day {
+
+    @media (max-width: 575.98px) {
+      border-right: 1px solid #CED4DA;;
+    }
+  }
+
+  &__apply-title {
+    margin-top: 64px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+    color: #152536;
+  }
+
+  &__form {
+    margin-top: 27px;
+
+    &-name, &-email, &-text {
+      border-radius: 8px;
+      border: 1px solid #152536;
+    }
+
+    &-name {
+      height: 36px;
+    }
+
+    &-email {
+      margin-top: 24px;
+      height: 36px;
+    }
+
+    &-text {
+      margin-top: 24px;
+      min-height: 160px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      @media (max-width: 575.98px) {
+        min-height: 180px;
+      }
+    }
+
+    &-submit {
+      padding: 8px 24.5px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: white;
+      background: #FD9F38;
+      border-radius: 8px;
+    }
+  }
+
+  &__consent {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-bottom: 48px;
+
+    a {
+      color: #152536;
+      text-decoration: underline;
+
+      &:hover {
+        color: #152536;
+      }
+    }
   }
 }
