@@ -77,4 +77,8 @@ $(document).ready(function() {
 
 
 
+  $('.license-pop').on('click', function() {
+    $('.licensepreview').attr('src', $(this).find('img').attr('src'));
+    $('#licenseimg').modal('show');   
+  });
 })
