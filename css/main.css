@@ -1708,7 +1708,7 @@ body.lock {
   font-weight: bold;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .page-about {
     padding-bottom: 64px;
   }
@@ -1777,6 +1777,13 @@ body.lock {
   padding-bottom: 64px;
 }
 
+@media (max-width: 575.98px) {
+  .page-headphys__wrap {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 .page-headphys .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1787,18 +1794,19 @@ body.lock {
           flex-direction: column;
 }
 
+.page-headphys__photo {
+  width: 100%;
+  padding-bottom: 133%;
+  position: relative;
+}
+
 .page-headphys__photo img {
+  position: absolute;
   border-radius: 8px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (max-width: 575.98px) {
-  .page-headphys__photo img {
-    max-width: 300px;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -2246,4 +2254,159 @@ body.lock {
   .page-documents__doc-text {
     padding-bottom: 16px;
   }
+}
+
+.page-medstaff {
+  padding-bottom: 128px;
+}
+
+@media (max-width: 1199.98px) {
+  .page-medstaff {
+    padding-bottom: 64px;
+  }
+}
+
+.page-medstaff .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .page-medstaff .container .row {
+    width: calc(100% + 16px);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .page-medstaff .row > div[class*="col"] {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-medstaff .row > div[class*="col"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.page-medstaff__item {
+  max-width: 300px;
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  display: block;
+  color: #152536;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+@media (max-width: 1199.98px) {
+  .page-medstaff__item {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-medstaff__item:hover {
+    color: #152536;
+    cursor: pointer;
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+  }
+  .page-medstaff__item:hover .page-medstaff__item-name {
+    color: #3d4044;
+    background-size: 100% 1px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-medstaff__item {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.page-medstaff__item-img {
+  overflow: hidden;
+  height: 360px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1199.98px) {
+  .page-medstaff__item-img {
+    height: 295px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-medstaff__item-img {
+    height: 340px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-medstaff__item-img {
+    width: 100%;
+    padding-bottom: 140%;
+    position: relative;
+  }
+}
+
+.page-medstaff__item-img img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 575.98px) {
+  .page-medstaff__item-img img {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.page-medstaff__item-name {
+  display: inline-block;
+  color: #152536;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#152536), to(#152536));
+  background-image: linear-gradient(#152536, #152536);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+@media (max-width: 575.98px) {
+  .page-medstaff__item-name {
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+}
+
+.page-medstaff__item-post {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #68717A;
 }
