@@ -2047,18 +2047,6 @@ body.lock {
   }
 }
 
-.page-headphys__form-submit, .page-headphys__form .orange-button {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 160px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-  background: #FD9F38;
-  border-radius: 8px;
-}
-
 .page-headphys__consent {
   font-weight: normal;
   font-size: 16px;
@@ -2074,6 +2062,34 @@ body.lock {
 
 .page-headphys__consent a:hover {
   color: #152536;
+}
+
+.page-headphys-submit, .orange-button {
+  display: inline-block;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 160px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  background: #FD9F38;
+  border-radius: 8px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.page-headphys-submit:hover, .orange-button:hover {
+  color: white;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.2);
+}
+
+@media (max-width: 991.98px) {
+  .page-headphys-submit, .orange-button {
+    width: 152px;
+  }
 }
 
 .page-licenses {
@@ -2172,4 +2188,62 @@ body.lock {
   background-image: url("../img/close-license.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.page-documents {
+  padding-bottom: 128px;
+}
+
+@media (max-width: 1199.98px) {
+  .page-documents {
+    padding-bottom: 64px;
+  }
+}
+
+.page-documents .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(195, 198, 201, 0.5)), to(rgba(195, 198, 201, 0.5)));
+  background-image: linear-gradient(rgba(195, 198, 201, 0.5), rgba(195, 198, 201, 0.5));
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 32px) 1px;
+}
+
+@media (max-width: 575.98px) {
+  .page-documents .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+.page-documents .row:first-child {
+  padding-top: 0;
+}
+
+.page-documents .row:last-child {
+  border-bottom: none;
+  background-image: none;
+}
+
+.page-documents__doc-text {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .page-documents__doc-text {
+    padding-bottom: 16px;
+  }
 }
