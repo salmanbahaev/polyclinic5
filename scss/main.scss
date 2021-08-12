@@ -1708,4 +1708,52 @@ body.lock {
   @media (max-width: 1199.98px) {
     padding-bottom: 64px;
   }
+
+  .modal-dialog {
+    @media (max-width: 767.98px) {
+      max-width: 360px;
+    }
+
+    @media (max-width: 575.98px) {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+
+  .modal-content {
+    padding: 12px;
+    border-radius: 18px;
+
+    @media (max-width: 575.98px) {
+      padding: 8px;
+      border-radius: 12px;
+    }
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+
+    .close {
+      opacity: 1;
+    }
+  }
+
+  .licenses-close {
+    display: inline-block;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url('../img/close-license.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
+

@@ -2122,3 +2122,54 @@ body.lock {
     padding-bottom: 64px;
   }
 }
+
+@media (max-width: 767.98px) {
+  .page-licenses .modal-dialog {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-licenses .modal-dialog {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.page-licenses .modal-content {
+  padding: 12px;
+  border-radius: 18px;
+}
+
+@media (max-width: 575.98px) {
+  .page-licenses .modal-content {
+    padding: 8px;
+    border-radius: 12px;
+  }
+}
+
+.page-licenses .modal-content img {
+  border-radius: 8px;
+}
+
+.page-licenses .modal-body {
+  padding: 0;
+}
+
+.page-licenses .modal-body .close {
+  opacity: 1;
+}
+
+.page-licenses .licenses-close {
+  display: inline-block;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url("../img/close-license.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

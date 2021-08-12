@@ -71,14 +71,9 @@ $(document).ready(function() {
   
 
 
-  var link = document.querySelector('link[rel=import]');
-  var content = link.import.querySelector('.wrapper');
-  document.body.appendChild(content.cloneNode(true));
-
-
-
-  $('.license-pop').on('click', function() {
-    $('.licensepreview').attr('src', $(this).find('img').attr('src'));
-    $('#licenseimg').modal('show');   
+  $('.licenses-pop').on('click', function() {
+    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+    $('#exampleModal').modal('show');  
   });
+
 })
