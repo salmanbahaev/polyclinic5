@@ -27,10 +27,6 @@ html, body {
 .breadcrumb {
   padding-top: 16px;
   margin-bottom: 17px;
-
-  @media (max-width: 575.98px) {
-    margin-bottom: 23px;
-  }
 }
 
 .breadcrumb-item {
@@ -38,12 +34,17 @@ html, body {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  padding-top: 8px;
+  padding-right: 12px;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+  padding-left: 0;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
   content: "|";
-  padding-left: 7px;
-  padding-right: 16px;
+  padding-right: 12px;
   color: #CED4DA;
 }
 
@@ -76,10 +77,10 @@ body.lock {
 }
 
 .wrapper {
-  margin-top: 104px;
+  margin-top: 96px;
 
   @media (max-width: 575.98px) {
-    margin-top: 92px;
+    margin-top: 84px;
   }
 }
 
@@ -1146,7 +1147,8 @@ body.lock {
 
       @media (min-width: 992px) {
         &:hover {
-          transform: scale(1.05);
+          // transform: scale(1.05);
+          transform: translateY(-12px);
         }
       }
 
@@ -1418,7 +1420,7 @@ body.lock {
   }
 }
 
-.page-headphys {
+.page-headphys, .page-medic, .page-reviews {
   padding-bottom: 64px;
 
   @media (max-width: 575.98px) {
@@ -1507,7 +1509,7 @@ body.lock {
     }
   }
 
-  .page-headphys__second {
+  .page-headphys__second, .page-medic__second {
     width: 100%;
     align-self: center;
 
@@ -1596,8 +1598,10 @@ body.lock {
     }
   }
 
-  &__days:last-child .page-headphys__days-day,
-  &__days:last-child .page-headphys__days-time {
+  &__days:last-child .page-medic__days-day,
+  &__days:last-child .page-medic__days-time,
+  &__days:last-child .page-medic__days-day,
+  &__days:last-child .page-medic__days-time {
     border-right: none;
 
     @media (max-width: 575.98px) {
@@ -1605,7 +1609,8 @@ body.lock {
     }
   }
 
-  &__days:last-child .page-headphys__days-day {
+  &__days:last-child .page-headphys__days-day,
+  &__days:last-child .page-medic__days-day {
 
     @media (max-width: 575.98px) {
       border-right: 1px solid #CED4DA;;
@@ -1668,7 +1673,65 @@ body.lock {
   }
 }
 
-.page-headphys-submit, .orange-button {
+.page-medic {
+  padding-bottom: 128px;
+  
+  @media (max-width: 1199.98px) {
+    padding-bottom: 64px;
+  }
+}
+
+.page-reviews {
+  &__form {
+    margin-top: 0;
+  }
+
+  &__button {
+    margin-top: 32px;
+  }
+
+  &__review {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+    }
+
+    &-name {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 24px;
+
+      @media (max-width: 575.98px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-date {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 24px;
+
+      @media (max-width: 575.98px) {
+
+      }
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+}
+
+.page-headphys__form-submit, .orange-button {
   display: inline-block;
   text-align: center;
   padding-top: 8px;
@@ -1729,6 +1792,7 @@ body.lock {
     img {
       width: 100%;
       height: auto;
+      border-radius: 8px;
     }
   }
 
@@ -1846,10 +1910,6 @@ body.lock {
     }
   }
 
-  .row {
-    
-  }
-
   .row > div[class*="col"] {
     
     @media (max-width: 991.98px) {
@@ -1954,5 +2014,93 @@ body.lock {
       line-height: 20px;
       color: #68717A;
     }
+  }
+}
+
+.page-vacancy, .page-direction, .page-hospitalization {
+  padding-bottom: 128px;
+
+  @media (max-width: 1199.98px) {
+    padding-bottom: 64px;
+  }
+
+  &__vacancy:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  &__post {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+
+    @media (max-width: 991.98px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+
+    @media (max-width: 991.98px) {
+      margin-top: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    padding-left: 24px;
+
+    p {
+      margin-bottom: 9px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__registry, &__registry:hover {
+    color: #FD9F38;
+    text-decoration: underline;
+    transition-duration: .3s;
+  }
+
+  &__registry:hover {
+    color: #ff8400;
+  }
+
+  &__text {
+    margin-top: 36px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+}
+
+.page-hospitalization {
+
+  &__plan {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  &__title-text {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+
+  &__text {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 19.5px;
   }
 }

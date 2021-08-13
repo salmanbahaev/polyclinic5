@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <title>Детская поликлиника №5 г. Грозного</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
     <div class="container">
       <div class="header__body">
         <a href="#" class="header__logo d-flex align-items-center">
-          <img src="img/logo.svg" alt="logo">
+          <img src="../img/logo.svg" alt="logo">
           <span>Детская поликлиника <span class="header__logo-number">№5</span><br>г. Грозного</span>
         </a>
         <div class="d-flex">
@@ -32,7 +32,7 @@
                     <div class="header__list-green">
                       <p class="header__menu-green">Поликлиника</p>
                       <div class="header__link-img">
-                        <img src="img/whale-menu.svg" alt="">
+                        <img src="../img/whale-menu.svg" alt="">
                       </div>
                     </div>
                     <li><a href="/" class="header__link">Главная</a></li>
@@ -41,7 +41,7 @@
                     <li><a href="/headphys.html" class="header__link">Главный врач</a></li>
                     <li><a href="/licenses.html" class="header__link">Лицензии</a></li>
                     <li><a href="/documents.html" class="header__link">Документы</a></li>
-                    <li><a href="/medstaff.html" class="header__link">Медицинский<br>персонал</a></li>
+                    <li><a href="/medstaff/index.html" class="header__link">Медицинский<br>персонал</a></li>
                     <li><a href="/vacancy.html" class="header__link">Вакансии</a></li>
                     <li><a href="/reviews.html" class="header__link">Отзывы</a></li>
                   </ul>
@@ -51,7 +51,7 @@
                     <div class="header__list-blue">
                       <p class="header__menu-blue">Родителям</p>
                       <div class="header__link-img">
-                        <img src="img/dolphin-menu.svg" alt="">
+                        <img src="../img/dolphin-menu.svg" alt="">
                       </div>
                     </div>
                     <li><a href="#" class="header__link">Правила записи</a></li>
@@ -70,7 +70,7 @@
                   <div class="header__list-pink">
                     <p class="header__menu-pink">Расписание</p>
                     <div class="header__link-img">
-                      <img src="img/octopus-menu.svg" alt="">
+                      <img src="../img/octopus-menu.svg" alt="">
                     </div>
                   </div>
                   <li><a href="#" class="header__link">Расписание врачей</a></li>
@@ -79,7 +79,7 @@
                   <div class="header__list-purple">
                     <p class="header__menu-purple">Контакты</p>
                     <div class="header__link-img">
-                      <img src="img/elephant-menu.svg" alt="">
+                      <img src="../img/elephant-menu.svg" alt="">
                     </div>
                   </div>
                   <li><a href="#" class="header__link">Контакты</a></li>
@@ -90,7 +90,7 @@
                   <div class="header__list-yellow">
                     <p class="header__menu-yellow">Услуги</p>
                     <div class="header__link-img">
-                      <img src="img/giraffe-menu.svg" alt="">
+                      <img src="../img/giraffe-menu.svg" alt="">
                     </div>
                   </div>
                   <li><a href="#" class="header__link">Бесплатные</a></li>
@@ -101,36 +101,97 @@
           </div>
         </nav>
       </div>
-    </div> 
+    </div>
   </header>
   <div class="wrapper">
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb text-uppercase bg-white p-0">
           <li class="breadcrumb-item" aria-label="breadcrumb"><a href="/polyclinic5/">Главная</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Вакансии</li>
+          <li class="breadcrumb-item" aria-label="breadcrumb"><a href="/polyclinic5/medstaff/index.html">Медицинский персонал</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Omar Torff</li>
         </ol>
       </nav>
     </div>
 
+    
 
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="main-titles">Вакансии</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-vacancy">
+    <div class="page-medic">
       <div class="container">
         <div class="row">
-          
+          <div class="col-12 col-sm-5 col-md-4">
+            <div class="page-headphys__wrap">
+              <div class="page-headphys__photo">
+                <img src="../img/meds-6.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-7 col-md-8 page-headphys__info">
+            <h3 class="page-headphys__name">Omar Torff</h3>
+            <span class="page-headphys__doctor">врач-педиатр</span>
+            <div>
+              <p class="page-headphys__title">Образование:</p>
+              <div class="page-headphys__subtitle">
+                <p>Учебное заведение: Махачкалинская медицинская академия</p>
+                <p>Специальность: Педиатрия</p>
+                <p>Год окончания: 1993</p>
+              </div>
+            </div>
+            <div>
+              <p class="page-headphys__title">Сертификат специалиста:</p>
+              <div class="page-headphys__subtitle">
+                <p>Учебное заведение: Махачкалинская медицинская академия</p>
+                <p>Специальность: Педиатрия</p>
+                <p>Дата получения: 1993</p>
+                <p>Серия: 2311001</p>
+                <p>Номер: 112093</p>
+              </div>
+            </div>
+            <div>
+              <p class="page-headphys__title">Кабинет:</p>
+              <div class="page-headphys__subtitle">
+                <p>Кабинет 240, этаж 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="col-12 page-headphys__schedule">Расписание</p>
+        </div>
+        <div class="row page-headphys__second">
+          <div class="col-12 col-sm-2 page-headphys__days p-0">
+            <p class="page-headphys__days-day day-desk">Понедельник</p>
+            <p class="page-headphys__days-day day-tablet">Пн.</p>
+            <p class="page-headphys__days-time">нет приема</p>
+          </div>
+          <div class="col-12 col-sm-2 page-headphys__days p-0">
+            <p class="page-headphys__days-day day-desk">Вторник</p>
+            <p class="page-headphys__days-day day-tablet">Вт.</p>
+            <p class="page-headphys__days-time">10:00 - 12:00</p>
+          </div>
+          <div class="col-12 col-sm-2 page-headphys__days p-0">
+            <p class="page-headphys__days-day day-desk">Среда</p>
+            <p class="page-headphys__days-day day-tablet">Ср.</p>
+            <p class="page-headphys__days-time">нет приема</p>
+          </div>
+          <div class="col-12 col-sm-2 page-headphys__days p-0">
+            <p class="page-headphys__days-day day-desk">Четверг</p>
+            <p class="page-headphys__days-day day-tablet">Чт.</p>
+            <p class="page-headphys__days-time">нет приема</p>
+          </div>
+          <div class="col-12 col-sm-2 page-headphys__days p-0">
+            <p class="page-headphys__days-day day-desk">Пятница</p>
+            <p class="page-headphys__days-day day-tablet">Пт.</p>
+            <p class="page-headphys__days-time">14:00 - 16:00</p>
+          </div>
+          <div class="col-12 col-sm-2 page-headphys__days p-0">
+            <p class="page-headphys__days-day day-desk">Суббота</p>
+            <p class="page-headphys__days-day day-tablet">Сб.</p>
+            <p class="page-headphys__days-time">нет приема</p>
+          </div>
         </div>
       </div>
     </div>
-
  
 
 
@@ -146,9 +207,9 @@
             <a href='tel: 88712294385' class="footer__gbu-number">+7 (8712) 29-43-85</a>
             <span class="footer__gbu-email">info-dp5@mail.ru</span>
             <div class="footer__media">
-              <a href="https://www.instagram.com/gbu_dp_5" target="_blank"><img src="img/instagram.svg" alt=""></a>
-              <a href="https://www.facebook.com/100243095541102" target="_blank"><img src="img/facebook.svg" alt=""></a>
-              <a href="https://vk.com/club204003495" target="_blank"><img src="img/vk.svg" alt=""></a>
+              <a href="https://www.instagram.com/gbu_dp_5" target="_blank"><img src="../img/instagram.svg" alt=""></a>
+              <a href="https://www.facebook.com/100243095541102" target="_blank"><img src="../img/facebook.svg" alt=""></a>
+              <a href="https://vk.com/club204003495" target="_blank"><img src="../img/vk.svg" alt=""></a>
             </div>
           </div>
     
@@ -194,7 +255,7 @@
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/main.js"></script>
   </body>
   </html>
