@@ -1177,7 +1177,7 @@ body.lock {
 
 .about__photo img {
   width: 100%;
-  height: 600px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
@@ -2120,6 +2120,15 @@ body.lock {
 .page-licenses__item {
   margin-bottom: 32px;
   background-color: transparent;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+@media (min-width: 992px) {
+  .page-licenses__item:hover {
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2257,7 +2266,7 @@ body.lock {
 }
 
 .page-medstaff {
-  padding-bottom: 128px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 1199.98px) {
