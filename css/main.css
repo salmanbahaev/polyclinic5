@@ -83,6 +83,7 @@ html, body {
 @media (min-width: 575.98px) {
   body::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
     background-color: #FD9F38;
   }
   body::-webkit-scrollbar-thumb {
@@ -2744,16 +2745,41 @@ body.lock {
   }
 }
 
+@media (max-width: 767.98px) {
+  .page-exam .table-block {
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+
+@media (min-width: 575.98px) {
+  .page-exam .table-block::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #FD9F38;
+  }
+  .page-exam .table-block::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: -webkit-gradient(linear, left top, right top, from(#FD9F38), to(#FD9F38));
+    background: linear-gradient(left, #FD9F38, #FD9F38);
+  }
+  .page-exam .table-block::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #eee;
+    -webkit-box-shadow: 0 0 0px 1px #bbb, inset 0 0 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 0px 1px #bbb, inset 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
 .page-exam .table {
   margin-top: 24px;
   font-size: 16px;
   line-height: 19.5px;
 }
 
-@media (max-width: 757.98px) {
+@media (max-width: 767.98px) {
   .page-exam .table {
-    width: 690px;
-    overflow-x: scroll;
+    min-width: 690px;
   }
 }
 
