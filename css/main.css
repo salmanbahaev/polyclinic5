@@ -312,11 +312,13 @@ body.lock {
 .header__menu-pink,
 .header__menu-purple,
 .header__menu-yellow {
+  position: relative;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 20px;
   color: #3FBEAC;
+  z-index: 100;
 }
 
 .header__menu-green {
@@ -379,6 +381,11 @@ body.lock {
 .header__list li:not(:last-child) {
   list-style: none;
   margin-bottom: 16px;
+}
+
+.header__list li {
+  position: relative;
+  z-index: 100;
 }
 
 .header__list li:hover .header__link {
@@ -2510,21 +2517,21 @@ body.lock {
   color: #68717A;
 }
 
-.page-vacancy, .page-direction, .page-hospitalization {
+.page-vacancy, .page-direction, .page-hospitalization, .page-prepair {
   padding-bottom: 128px;
 }
 
 @media (max-width: 1199.98px) {
-  .page-vacancy, .page-direction, .page-hospitalization {
+  .page-vacancy, .page-direction, .page-hospitalization, .page-prepair {
     padding-bottom: 64px;
   }
 }
 
-.page-vacancy__vacancy:not(:last-child), .page-direction__vacancy:not(:last-child), .page-hospitalization__vacancy:not(:last-child) {
+.page-vacancy__vacancy:not(:last-child), .page-direction__vacancy:not(:last-child), .page-hospitalization__vacancy:not(:last-child), .page-prepair__vacancy:not(:last-child) {
   margin-bottom: 64px;
 }
 
-.page-vacancy__post, .page-direction__post, .page-hospitalization__post {
+.page-vacancy__post, .page-direction__post, .page-hospitalization__post, .page-prepair__post {
   margin-bottom: 0;
   font-weight: bold;
   font-size: 32px;
@@ -2532,13 +2539,13 @@ body.lock {
 }
 
 @media (max-width: 991.98px) {
-  .page-vacancy__post, .page-direction__post, .page-hospitalization__post {
+  .page-vacancy__post, .page-direction__post, .page-hospitalization__post, .page-prepair__post {
     font-size: 24px;
     line-height: 29px;
   }
 }
 
-.page-vacancy__title, .page-direction__title, .page-hospitalization__title {
+.page-vacancy__title, .page-direction__title, .page-hospitalization__title, .page-prepair__title {
   font-weight: 600;
   font-size: 16px;
   line-height: 19.5px;
@@ -2547,38 +2554,38 @@ body.lock {
 }
 
 @media (max-width: 991.98px) {
-  .page-vacancy__title, .page-direction__title, .page-hospitalization__title {
+  .page-vacancy__title, .page-direction__title, .page-hospitalization__title, .page-prepair__title {
     margin-top: 24px;
   }
 }
 
-.page-vacancy__subtitle, .page-direction__subtitle, .page-hospitalization__subtitle {
+.page-vacancy__subtitle, .page-direction__subtitle, .page-hospitalization__subtitle, .page-prepair__subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.5px;
   padding-left: 24px;
 }
 
-.page-vacancy__subtitle p, .page-direction__subtitle p, .page-hospitalization__subtitle p {
+.page-vacancy__subtitle p, .page-direction__subtitle p, .page-hospitalization__subtitle p, .page-prepair__subtitle p {
   margin-bottom: 9px;
 }
 
-.page-vacancy__subtitle p:last-child, .page-direction__subtitle p:last-child, .page-hospitalization__subtitle p:last-child {
+.page-vacancy__subtitle p:last-child, .page-direction__subtitle p:last-child, .page-hospitalization__subtitle p:last-child, .page-prepair__subtitle p:last-child {
   margin-bottom: 0;
 }
 
-.page-vacancy__registry, .page-vacancy__registry:hover, .page-direction__registry, .page-direction__registry:hover, .page-hospitalization__registry, .page-hospitalization__registry:hover {
+.page-vacancy__registry, .page-vacancy__registry:hover, .page-direction__registry, .page-direction__registry:hover, .page-hospitalization__registry, .page-hospitalization__registry:hover, .page-prepair__registry, .page-prepair__registry:hover {
   color: #FD9F38;
   text-decoration: underline;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
 }
 
-.page-vacancy__registry:hover, .page-direction__registry:hover, .page-hospitalization__registry:hover {
+.page-vacancy__registry:hover, .page-direction__registry:hover, .page-hospitalization__registry:hover, .page-prepair__registry:hover {
   color: #ff8400;
 }
 
-.page-vacancy__text, .page-direction__text, .page-hospitalization__text {
+.page-vacancy__text, .page-direction__text, .page-hospitalization__text, .page-prepair__text {
   margin-top: 36px;
   margin-bottom: 0;
   font-size: 16px;
@@ -2600,4 +2607,97 @@ body.lock {
   margin-top: 32px;
   font-size: 16px;
   line-height: 19.5px;
+}
+
+.page-prepair .card {
+  border: 0;
+}
+
+.page-prepair .card-header {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.page-prepair .card-body {
+  padding: 0;
+}
+
+.page-prepair__title {
+  margin-top: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .page-prepair__title {
+    margin-top: 12px;
+  }
+}
+
+.page-prepair__subtitle {
+  padding-bottom: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .page-prepair__subtitle {
+    padding-bottom: 12px;
+  }
+}
+
+.page-prepair .btn.focus, .page-prepair .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.page-prepair .card-header .btn {
+  position: relative;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  text-decoration: none;
+  padding: 16px 48px 16px 0;
+  border-top: 1px solid rgba(195, 198, 201, 0.5);
+  color: #152536;
+}
+
+.page-prepair .card-header .btn:hover {
+  color: #152536;
+}
+
+@media (max-width: 991.98px) {
+  .page-prepair .card-header .btn {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.page-prepair .accordion .card .btn:after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 0;
+  bottom: 0;
+  width: 22px;
+  height: 100%;
+  background: url("../img/c-arrow.svg") 0 50% no-repeat;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.page-prepair .accordion .card .btn[aria-expanded="true"]:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.page-prepair .accordion .card .btn[aria-expanded="false"]:after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.page-prepair .card-body {
+  padding-bottom: 32px;
+}
+
+.page-prepair .accordion .card:first-child .btn {
+  border-top: none;
+  margin-top: -16px;
 }
