@@ -2241,8 +2241,8 @@ body.lock {
     line-height: 19.5px;
 
     @media (max-width: 757.98px) {
-      min-width: 690px;
-      overflow-y: scroll;
+      width: 690px;
+      overflow-x: scroll;
     }
 
     td, th {

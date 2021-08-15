@@ -2752,8 +2752,8 @@ body.lock {
 
 @media (max-width: 757.98px) {
   .page-exam .table {
-    min-width: 690px;
-    overflow-y: scroll;
+    width: 690px;
+    overflow-x: scroll;
   }
 }
 
