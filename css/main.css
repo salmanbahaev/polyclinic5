@@ -2701,3 +2701,93 @@ body.lock {
   border-top: none;
   margin-top: -16px;
 }
+
+.page-exam {
+  padding-bottom: 128px;
+}
+
+@media (max-width: 1199.98px) {
+  .page-exam {
+    padding-bottom: 64px;
+  }
+}
+
+.page-exam__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+
+.page-exam__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.page-exam__text:last-child {
+  margin-bottom: 0;
+}
+
+.page-exam__list-title {
+  margin-top: 64px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+@media (max-width: 991.98px) {
+  .page-exam__list-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.page-exam .table {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+@media (max-width: 757.98px) {
+  .page-exam .table {
+    min-width: 690px;
+    overflow-y: scroll;
+  }
+}
+
+.page-exam .table td, .page-exam .table th {
+  border-top: 0;
+  padding: 16px;
+}
+
+.page-exam .table th {
+  vertical-align: top;
+  border-bottom: 0;
+}
+
+.page-exam .table td {
+  border-top: 1px solid rgba(195, 198, 201, 0.5);
+}
+
+.page-exam .table td p {
+  margin-bottom: 9px;
+}
+
+.page-exam .table td p:last-child {
+  margin-bottom: 0px;
+}
+
+.page-exam .table .col-3, .page-exam .table .col-4, .page-exam .table .col-5 {
+  padding-left: 0;
+}
+
+.page-exam__note {
+  margin-top: 34px;
+}
+
+.page-exam__note p {
+  font-size: 16px;
+  line-height: 19.5px;
+}
