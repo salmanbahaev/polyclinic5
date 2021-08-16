@@ -8,6 +8,8 @@ html, body {
   height: auto;
 }
 
+
+
 @media (min-width: 575.98px) {
   body::-webkit-scrollbar {
     width: 8px;
@@ -75,6 +77,7 @@ html, body {
 
 body.lock {
   overflow: hidden;
+  // padding-right: 8px;
 }
 
 .wrapper {
