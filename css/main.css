@@ -1134,6 +1134,10 @@ body.lock {
      object-fit: cover;
 }
 
+.specialists__item:hover .specialists__name {
+  background-size: 100% 1px;
+}
+
 .specialists__info {
   position: absolute;
   bottom: 0;
@@ -1146,12 +1150,20 @@ body.lock {
 }
 
 .specialists__name {
+  display: inline-block;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
   margin-bottom: 4px;
   color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(#fff, #fff);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
 }
 
 .specialists__post {
@@ -2745,6 +2757,13 @@ body.lock {
   }
 }
 
+@media (max-width: 575.98px) {
+  .page-exam__list-title {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .page-exam .table-block {
     overflow-x: scroll;
@@ -2816,4 +2835,44 @@ body.lock {
 .page-exam__note p {
   font-size: 16px;
   line-height: 19.5px;
+}
+
+.page-routine {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-routine .col-12 {
+  padding-bottom: 64px;
+}
+
+.page-routine__title-1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 991.98px) {
+  .page-routine__title-1 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.page-routine__subtitle-1 {
+  margin-bottom: 8px;
+}
+
+.page-routine__subtitle-text {
+  padding-left: 24px;
+}
+
+.page-routine__subtitle-text p {
+  margin-bottom: 8px;
+}
+
+.page-routine__subtitle-text p:last-child {
+  margin-bottom: 0;
 }
