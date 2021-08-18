@@ -1134,8 +1134,8 @@ body.lock {
      object-fit: cover;
 }
 
-.specialists__item:hover .specialists__name {
-  background-size: 100% 1px;
+.specialists__item:hover .specialists__info {
+  background: rgba(21, 37, 54, 0.6);
 }
 
 .specialists__info {
@@ -1147,6 +1147,8 @@ body.lock {
   background: rgba(21, 37, 54, 0.5);
   border-radius: 8px;
   z-index: 40;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
 }
 
 .specialists__name {
@@ -1857,8 +1859,8 @@ body.lock {
 
 .page-headphys__name, .page-medic__name, .page-reviews__name {
   font-weight: bold;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 30px;
+  line-height: 35px;
   color: #152536;
 }
 

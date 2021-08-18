@@ -872,8 +872,8 @@ body.lock {
     }
 
     &:hover {
-      .specialists__name {
-        background-size: 100% 1px;
+      .specialists__info {
+        background: rgba(21, 37, 54, 0.6);
       }
     }
   }
@@ -887,6 +887,7 @@ body.lock {
     background: rgba(21, 37, 54, 0.5);
     border-radius: 8px;
     z-index: 40;
+    transition-duration: .25s;
   }
 
   &__name {
@@ -1488,8 +1489,8 @@ body.lock {
 
   &__name {
     font-weight: bold;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 30px;
+    line-height: 35px;
     color: #152536;
 
     @media (max-width: 575.98px) {
