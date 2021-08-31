@@ -1864,6 +1864,13 @@ body.lock {
   color: #152536;
 }
 
+@media (max-width: 991.98px) {
+  .page-headphys__name, .page-medic__name, .page-reviews__name {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .page-headphys__name, .page-medic__name, .page-reviews__name {
     margin-top: 24px;
@@ -2018,28 +2025,28 @@ body.lock {
   }
 }
 
+.page-headphys__days:last-child .page-headphys__days-day,
+.page-headphys__days:last-child .page-headphys__days-time,
 .page-headphys__days:last-child .page-medic__days-day,
-.page-headphys__days:last-child .page-medic__days-time,
-.page-headphys__days:last-child .page-medic__days-day,
-.page-headphys__days:last-child .page-medic__days-time, .page-medic__days:last-child .page-medic__days-day,
-.page-medic__days:last-child .page-medic__days-time,
+.page-headphys__days:last-child .page-medic__days-time, .page-medic__days:last-child .page-headphys__days-day,
+.page-medic__days:last-child .page-headphys__days-time,
 .page-medic__days:last-child .page-medic__days-day,
-.page-medic__days:last-child .page-medic__days-time, .page-reviews__days:last-child .page-medic__days-day,
-.page-reviews__days:last-child .page-medic__days-time,
+.page-medic__days:last-child .page-medic__days-time, .page-reviews__days:last-child .page-headphys__days-day,
+.page-reviews__days:last-child .page-headphys__days-time,
 .page-reviews__days:last-child .page-medic__days-day,
 .page-reviews__days:last-child .page-medic__days-time {
   border-right: none;
 }
 
 @media (max-width: 575.98px) {
+  .page-headphys__days:last-child .page-headphys__days-day,
+  .page-headphys__days:last-child .page-headphys__days-time,
   .page-headphys__days:last-child .page-medic__days-day,
-  .page-headphys__days:last-child .page-medic__days-time,
-  .page-headphys__days:last-child .page-medic__days-day,
-  .page-headphys__days:last-child .page-medic__days-time, .page-medic__days:last-child .page-medic__days-day,
-  .page-medic__days:last-child .page-medic__days-time,
+  .page-headphys__days:last-child .page-medic__days-time, .page-medic__days:last-child .page-headphys__days-day,
+  .page-medic__days:last-child .page-headphys__days-time,
   .page-medic__days:last-child .page-medic__days-day,
-  .page-medic__days:last-child .page-medic__days-time, .page-reviews__days:last-child .page-medic__days-day,
-  .page-reviews__days:last-child .page-medic__days-time,
+  .page-medic__days:last-child .page-medic__days-time, .page-reviews__days:last-child .page-headphys__days-day,
+  .page-reviews__days:last-child .page-headphys__days-time,
   .page-reviews__days:last-child .page-medic__days-day,
   .page-reviews__days:last-child .page-medic__days-time {
     border-bottom: none;
@@ -2877,4 +2884,46 @@ body.lock {
 
 .page-routine__subtitle-text p:last-child {
   margin-bottom: 0;
+}
+
+.page-contacts {
+  padding-bottom: 64px;
+}
+
+.page-contacts h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.page-contacts__text {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-contacts__text-main {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.page-contacts__text-second {
+  font-weight: 400;
+  padding-left: 24px;
+}
+
+.page-contacts__text-second a {
+  color: #152536;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3d4044), to(#3d4044));
+  background-image: linear-gradient(#3d4044, #3d4044);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.page-contacts__text-second a:hover {
+  color: #3d4044;
+  background-size: 100% 1px;
 }
