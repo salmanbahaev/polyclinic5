@@ -1019,33 +1019,22 @@ body.lock {
   font-size: 24px;
   line-height: 29px;
   color: #3d4044;
-  pointer-events: none;
 }
 
 .specialists__title a {
   color: #152536;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#152536), to(#152536));
+  background-image: linear-gradient(#152536, #152536);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
 }
 
 .specialists__title a:hover {
   color: #152536;
-}
-
-@media (max-width: 991.98px) {
-  .specialists__title {
-    pointer-events: auto;
-    color: #3d4044;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#3d4044), to(#3d4044));
-    background-image: linear-gradient(#3d4044, #3d4044);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 1px;
-    -webkit-transition: background-size .3s;
-    transition: background-size .3s;
-  }
-  .specialists__title:hover {
-    color: #3d4044;
-    background-size: 100% 1px;
-  }
+  background-size: 100% 1px;
 }
 
 .specialists__subtitle {
@@ -1185,6 +1174,22 @@ body.lock {
   font-size: 24px;
   line-height: 29px;
   color: #152536;
+}
+
+.about__header a {
+  color: #152536;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#152536), to(#152536));
+  background-image: linear-gradient(#152536, #152536);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.about__header a:hover {
+  color: #152536;
+  background-size: 100% 1px;
 }
 
 .about__content {
