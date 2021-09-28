@@ -1291,6 +1291,10 @@ body.lock {
   color: #FFFFFF;
 }
 
+.headphys__title a {
+  color: #fff;
+}
+
 @media (max-width: 575.98px) {
   .headphys__title {
     margin-top: 16px;
