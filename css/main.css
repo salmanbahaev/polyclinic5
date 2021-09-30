@@ -1568,6 +1568,10 @@ body.lock {
   margin-bottom: 32px;
 }
 
+.footer__gbu-title:hover {
+  cursor: default;
+}
+
 @media (max-width: 350px) {
   .footer__gbu-title {
     font-size: 15px;
@@ -1588,6 +1592,10 @@ body.lock {
 
 .footer__gbu-address {
   margin-bottom: 12px;
+}
+
+.footer__gbu-address:hover {
+  cursor: default;
 }
 
 .footer__gbu-number {
@@ -1616,6 +1624,10 @@ body.lock {
   line-height: 20px;
   color: #495057;
   margin-bottom: 16px;
+}
+
+.footer__headlink:hover {
+  cursor: default;
 }
 
 .footer__headlink-services {

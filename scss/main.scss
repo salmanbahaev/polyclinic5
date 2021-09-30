@@ -1248,6 +1248,8 @@ body.lock {
     color: #495057;
     margin-bottom: 32px;
 
+    &:hover {cursor: default;}
+
     @media (max-width: 350px) {
       font-size: 15px;
     }
@@ -1264,6 +1266,8 @@ body.lock {
 
   &__gbu-address {
     margin-bottom: 12px;
+
+    &:hover {cursor: default;}
   }
 
   &__gbu-number {
@@ -1290,6 +1294,8 @@ body.lock {
     line-height: 20px;
     color: #495057;
     margin-bottom: 16px;
+
+    &:hover {cursor: default;}
   }
 
   &__headlink-services {
