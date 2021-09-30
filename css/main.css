@@ -1568,8 +1568,12 @@ body.lock {
   margin-bottom: 32px;
 }
 
-.footer__gbu-title:hover {
-  cursor: default;
+.footer__gbu-title a {
+  color: #495057;
+}
+
+.footer__gbu-title a:hover {
+  color: #495057;
 }
 
 @media (max-width: 350px) {
