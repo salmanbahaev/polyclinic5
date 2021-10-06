@@ -3134,6 +3134,7 @@ body.lock {
 
 .page-schedule table td:nth-child(2) {
   width: 17%;
+  padding-right: 8px;
 }
 
 @media (max-width: 991.98px) {
