@@ -55,19 +55,19 @@ $(document).ready(function() {
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
   })
 
-  // function shineLinks(id){
-  //   try{
-  //     var el = document.getElementById(id).getElementsByTagName('a');
-  //     var url = document.location.href;
-  //     for (var i = 0; i < el.length; i++){
-  //       if (url == el[i].href) {
-  //           el[i].className += ' act';
-  //       };
-  //     };
-  //   } catch(e){}
-  // };
+  function shineLinks(id){
+    try{
+      var el = document.getElementById(id).getElementsByTagName('a');
+      var url = document.location.href;
+      for (var i = 0; i < el.length; i++){
+        if (url == el[i].href) {
+            el[i].className += ' act';
+        };
+      };
+    } catch(e){}
+  };
 
-  // shineLinks('menu-act');
+  shineLinks('menu-act');
   
 
 

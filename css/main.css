@@ -3133,7 +3133,7 @@ body.lock {
 }
 
 .page-schedule table td:nth-child(2) {
-  width: 17%;
+  width: 18%;
   padding-right: 8px;
 }
 
@@ -3145,16 +3145,16 @@ body.lock {
   }
 }
 
-.page-schedule table .page-schedule__border-right {
-  width: 8%;
-  border-right: 1px solid #CED4DA;
-}
-
 .page-schedule table td:nth-child(n + 3) {
   width: 8.3%;
   text-align: center;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.page-schedule table td.page-schedule__border-right {
+  width: 7%;
+  border-right: 1px solid #CED4DA;
 }
 
 @media (max-width: 991.98px) {
