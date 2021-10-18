@@ -1985,11 +1985,6 @@ body.lock {
         color: #152536;
         cursor: pointer;
         transform: translateY(-16px);
-  
-        .page-medstaff__item-name {
-          color: #3d4044;
-          background-size: 100% 1px;
-        }
       }
     }
 
@@ -2001,7 +1996,7 @@ body.lock {
 
     &-img {
       overflow: hidden;
-      height: 360px;
+      height: 340px;
       border-radius: 8px;
 
 

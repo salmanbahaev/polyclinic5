@@ -1,8 +1,9 @@
 $(document).ready(function() {
+  // меню-бургер
   $('.header__burger, .header__site-menu').click(function() {
     $('.header__burger,.header__menu').toggleClass('active')
+    //блок прокрутки фона при открытом меню
     $('body').toggleClass('lock')
-    // $('.header').toggleClass('header__center')
   })
 
   // слайдер для баннера
@@ -55,7 +56,8 @@ $(document).ready(function() {
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
   })
 
-  function shineLinks(id){
+  // класс act для меню (активное меню)
+  /* function shineLinks(id){
     try{
       var el = document.getElementById(id).getElementsByTagName('a');
       var url = document.location.href;
@@ -67,13 +69,12 @@ $(document).ready(function() {
     } catch(e){}
   };
 
-  shineLinks('menu-act');
+  shineLinks('menu-act'); */
   
-
-
+  // Модальное окно для лицензий
   $('.licenses-pop').on('click', function() {
     $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-    $('#exampleModal').modal('show');  
+    $('#exampleModal').modal('show');
   });
 
 })

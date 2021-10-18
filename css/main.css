@@ -2478,10 +2478,6 @@ body.lock {
     -webkit-transform: translateY(-16px);
             transform: translateY(-16px);
   }
-  .page-medstaff__item:hover .page-medstaff__item-name {
-    color: #3d4044;
-    background-size: 100% 1px;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -2494,7 +2490,7 @@ body.lock {
 
 .page-medstaff__item-img {
   overflow: hidden;
-  height: 360px;
+  height: 340px;
   border-radius: 8px;
 }
 
