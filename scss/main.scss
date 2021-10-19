@@ -1893,7 +1893,7 @@ body.lock {
 }
 
 // ---------------page-documents
-.page-documents, .page-paid {
+.page-documents, .page-paid, .page-medicine {
   padding-bottom: 128px;
 
   @media (max-width: 1199.98px) {
@@ -2632,6 +2632,96 @@ body.lock {
         display: table-cell;
         padding: 12px 12px 12px 0;
       }
+    }
+  }
+}
+
+.page-states {
+  padding-bottom: 64px;
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: bold;
+
+    @media (max-width: 767.98px) {
+      font-size: 24px;
+      line-height: 29px; 
+    }
+  }
+
+  &__info {
+    padding-bottom: 64px;
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      a {
+        color: #152536;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.page-insurance {
+  padding-bottom: 64px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  &__info {
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__img {
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+  }
+}
+
+.page-free {
+  padding-bottom: 64px;
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  ul {
+    padding-left: 32px;
+    li {
+      list-style-type: disc;
+    }
+  }
+  
+
+  &__info {
+    font-size: 16px;
+    line-height: 20px;
+
+    p {
+      font-weight: 600;
     }
   }
 }
