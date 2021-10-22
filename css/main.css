@@ -2636,14 +2636,42 @@ body.lock {
 }
 
 .page-hospitalization__plan {
+  margin-top: 24px;
+  font-weight: 700;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 19.5px;
 }
 
+.page-hospitalization__title {
+  font-weight: normal;
+  margin-top: 16px;
+}
+
 .page-hospitalization__title-text {
   font-size: 16px;
   line-height: 19.5px;
+}
+
+.page-hospitalization__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  padding-left: 24px;
+}
+
+.page-hospitalization__subtitle ul {
+  padding-left: 32px;
+  margin-top: 16px;
+}
+
+.page-hospitalization__subtitle ul li {
+  margin-bottom: 9px;
+  list-style-type: disc;
+}
+
+.page-hospitalization__subtitle ul li:last-child {
+  margin-bottom: 0;
 }
 
 .page-hospitalization__text {
@@ -2905,6 +2933,15 @@ body.lock {
 
 .page-routine__subtitle-1 {
   margin-bottom: 8px;
+}
+
+.page-routine__subtitle-1 ul {
+  padding-left: 40px;
+}
+
+.page-routine__subtitle-1 ul li {
+  list-style-type: disc;
+  margin-bottom: 4px;
 }
 
 .page-routine__subtitle-text {

@@ -2127,14 +2127,41 @@ body.lock {
 .page-hospitalization {
 
   &__plan {
+    margin-top: 24px;
+    font-weight: 700;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 19.5px;
   }
 
+  &__title {
+    font-weight: normal;
+    margin-top: 16px;
+  }
+
   &__title-text {
     font-size: 16px;
     line-height: 19.5px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    padding-left: 24px;
+
+    ul {
+      padding-left: 32px;
+      margin-top: 16px;
+      li {
+        margin-bottom: 9px;
+        list-style-type: disc;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   &__text {
@@ -2383,6 +2410,15 @@ body.lock {
 
   &__subtitle-1 {
     margin-bottom: 8px;
+
+    ul {
+      padding-left: 40px;
+
+      li {
+        list-style-type: disc;
+        margin-bottom: 4px;
+      }
+    }
   }
 
   &__subtitle-text {
