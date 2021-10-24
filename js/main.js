@@ -56,7 +56,7 @@ $(document).ready(function() {
     nextArrow: '<button type="button" class="slick__banner-next"><img class="banner__arrow-svg" src="img/arrow-banner.svg" alt=""></button>'
   })
 
-  // класс act для меню (активное меню)
+  // добавляем класс act для меню сайта (активное меню)
   /* function shineLinks(id){
     try{
       var el = document.getElementById(id).getElementsByTagName('a');
@@ -76,5 +76,14 @@ $(document).ready(function() {
     $('.imagepreview').attr('src', $(this).find('img').attr('src'));
     $('#exampleModal').modal('show');
   });
+
+  // required/opacity для формы (../headphys.html)
+  $('.page-headphys__checkbox-input').on('click', function() {
+    if($(this).prop('checked')) {
+      $('.page-headphys__form-submit').prop('required', false).css('opacity', '1.0')
+    } else {
+      $('.page-headphys__form-submit').prop('required', true).css('opacity', '0.5')
+    }
+  })
 
 })

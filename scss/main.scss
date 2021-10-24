@@ -1717,6 +1717,64 @@ body.lock {
   }
 }
 
+.page-headphys {
+
+  &__form-check {
+    margin-top: 32px;
+  }
+  &__form-submit {
+    margin-top: 32px;
+  }
+
+  &__checkbox-input {
+    display: none;
+  }
+
+  &__checkbox-label {
+    width: 100%;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 0;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    p {margin-bottom: 0;}
+
+    a {
+      color: #152536;
+      text-decoration: underline;
+    }
+  }
+
+  &__checkbox-input:checked + &__checkbox-label::after {
+    transform: scale(1);
+  }
+
+  &__checkbox-label::before {
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 1px solid #888;
+  }
+  &__checkbox-label::after {
+    transition: transform 0.5s ease 0s;
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #999;
+    border-radius: 4px;
+    transform: scale(0);
+  }
+}
+
 .page-medic {
   padding-bottom: 128px;
   

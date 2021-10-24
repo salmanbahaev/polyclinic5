@@ -204,15 +204,22 @@
           </div>
         </div>
         <div class="row page-headphys__apply">
-          <p class="col-12 page-headphys__apply-title">Обратиться к главному врачу</p>
-          <form class="col-12 page-headphys__form" action="#">
-            <input required class="col-12 col-md-6 page-headphys__form-name" type="text" placeholder="Введите ваше ФИО">
-            <input required class="col-12 col-md-6 page-headphys__form-email" type="email" placeholder="Введите ваш электронный адрес">
-            <textarea required class="col-12 page-headphys__form-text" placeholder="Содержание"></textarea>
-            <p class="page-headphys__consent">Нажимая “отправить” вы выражаете согласие на обработку ваших персональных данных. <a href="#">Подробнее</a></p>
-            <!-- recaptcha -->
-            <button class="page-headphys__form-submit" type="submit">Отправить</button>
-          </form>
+          <div class="page-headphys__forms">
+            <h3 class="col-12 page-headphys__apply-title">Обратиться к главному врачу</h3>
+            <form class="col-12 page-headphys__form" action="#">
+              <input required class="col-12 col-md-6 page-headphys__form-name" type="text" name="name" placeholder="Введите ФИО">
+              <input required class="col-12 col-md-6 page-headphys__form-email" type="email" name="email" placeholder="Введите электронный адрес">
+              <input required class="col-12 col-md-6 page-headphys__form-email" type="tel" name="tel" placeholder="Введите номер телефона">
+              <textarea required class="col-12 page-headphys__form-text" placeholder="Содержание"></textarea>
+              <div class="page-headphys__form-check">
+                <div class="page-headphys__checkbox">
+                  <input id="formAgreement" checked type="checkbox" name="agreement" class="page-headphys__checkbox-input">
+                  <label for="formAgreement" class="page-headphys__checkbox-label"><p>Я согласен на <a href="docs/agreement.pdf" target="_blank">передачу и обработку персональных данных</a>*</p></label>
+                </div>
+              </div>
+              <button class="page-headphys__form-submit" type="submit">Отправить</button>
+            </form>
+          </div>
           
         </div>
       </div>
